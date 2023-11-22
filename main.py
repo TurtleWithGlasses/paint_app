@@ -6,7 +6,7 @@ class App(ctk.CTk):
         super().__init__()
         self.geometry("800x600")
         self.title("Paint App")
-        self.iconbitmap("empty.ico")
+        self.iconbitmap("empty.ico") 
         ctk.set_appearance_mode("light")
 
         # data
