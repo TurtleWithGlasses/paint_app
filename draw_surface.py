@@ -31,7 +31,7 @@ class DrawSurface(Canvas):
 
     def create_brush_line(self, start, end):
         brush_size = self.brush_float.get() * 100
-        self.create_line(start, end, fill="black", width=brush_size,capstyle="round")
+        self.create_line(start, end, fill=f"#{self.color_string.get()}", width=brush_size,capstyle="round")
 
     def activate_draw(self,event):
         self.allow_draw = True

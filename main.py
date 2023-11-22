@@ -12,11 +12,11 @@ class App(ctk.CTk):
 
         # data
         self.color_string = ctk.StringVar(value="000")
-        self.brush_float = ctk.DoubleVar(value=0.2)
+        self.brush_float = ctk.DoubleVar(value=1)
 
         # widgets
         DrawSurface(self, self.color_string, self.brush_float)
-        ToolPanel(self,self.brush_float)
+        ToolPanel(self,self.brush_float,self.color_string)
 
         # mousewheel event
         self.bind("<MouseWheel>",self.adjust_brush_size)
